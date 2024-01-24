@@ -16,7 +16,7 @@ const useSortedPosts=(posts, sort)=> {
 const usePost = (posts, sort, qvery)=>{
    const sortedPost = useSortedPosts(posts, sort);
    const sortedAndSearchedPost = useMemo(()=>{
-      if (typeof sortedPost== Array) {
+      if (typeof sortedPost== 'object') {
       return sortedPost.filter(post=> post.title.toLowerCase().includes(qvery.toLowerCase()))
       } else {
          return []

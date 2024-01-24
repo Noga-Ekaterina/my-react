@@ -1,0 +1,17 @@
+.preloader{
+   width: 100px;
+   height: 100px;
+   margin: 40px auto;
+   border-radius: 50%;
+   border: 4px dashed #25ec28;
+   animation: rotate 1.5s infinite;
+}
+
+@keyframes rotate {
+   from{
+      transform: rotate(0);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+}
